@@ -1,0 +1,20 @@
+<form class="form" (ngSubmit)="createComment()">
+  <input
+    type="text"
+    id="nick"
+    name="nick"
+    [(ngModel)]="newCommentNick"
+    autocomplete="off"
+    placeholder="Your Nick Name"
+  />
+  <textarea
+    name="content"
+    id="content"
+    cols="30"
+    rows="10"
+    [(ngModel)]="newCommentContent"
+    placeholder="Write Your Comment"
+  >
+  </textarea>
+  <button type="submit">Send Comment</button>
+</form>

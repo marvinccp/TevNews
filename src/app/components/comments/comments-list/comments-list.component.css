@@ -1,0 +1,9 @@
+section {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px;
+}

@@ -1,0 +1,87 @@
+<section>
+  <header>
+    <!-- principal article -->
+    <article>
+      <img
+        src="../../../assets/deportes/banneramericano.jpg"
+        alt="banner-americano"
+      />
+      <div>
+        <h2>THE BIG GAME</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deserunt
+          repellat sit! Ab ipsum, beatae nobis porro quod, amet saepe
+          consectetur deleniti facere modi, dicta a! Minima possimus ea libero!.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus quasi cumque esse aspernatur nam sed quibusdam in
+          adipisci, ad dolorem eius explicabo hic velit illum quae, quo dolorum
+          soluta laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Sapiente, neque. Ea perspiciatis harum doloribus? Dolorum nulla
+          pariatur quae tempore, recusandae, reiciendis aliquid nostrum
+          dignissimos cumque facere eligendi, harum commodi iste!
+        </p>
+      </div>
+    </article>
+
+    <!-- recent pos -->
+    <section class="recent-post-sports-container">
+      <article class="article-recent-post" *ngFor="let post of recentPost">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.resume }}</p>
+        <div class="separator-recent-post-sport"></div>
+      </article>
+    </section>
+  </header>
+
+  <main>
+    <div class="item1"></div>
+
+    <div class="item2">
+      <h2>La Era Del Gaming</h2>
+      <p>
+        Descubre la influencia de este 'Movimiento' en nuestra juventud y
+        aprende a usar el gaming a tu favor
+      </p>
+    </div>
+  </main>
+  <div class="separator"></div>
+
+  <!-- other news -->
+  <section class="other-news--p-container" >
+    <h2 class="other-news-title">Other news</h2>
+    <div class="other-news-container" >
+
+    <article class="article-other-news " *ngFor="let onews of OtherNews" >
+      <small class="small">{{onews.section}}</small>
+      <p>{{onews.content}}</p>
+    </article>
+
+    </div>
+
+  </section>
+
+  <!-- videos -->
+  <section class="videos-section-container">
+    <h2>Videos de la semana</h2>
+    <section class="videos-container">
+      <div class="videoContainer">
+        <h3 class="video-title">Niños Prodigio</h3>
+        <video src="../../../assets/videos/niño-prodigio.mp4" width="100%" height="100%" controls>
+        </video>
+      </div>
+      <div class="videoContainer">
+        <h3 class="video-title">Deporte Paralimpico</h3>
+         <video src="../../../assets/videos/niño-prodigio.mp4" width="100%" height="100%" controls>
+        </video>
+
+      </div>
+    </section>
+  </section>
+
+  <section class="comments-container">
+    <h2>Comentarios</h2>
+    <app-comments />
+  </section>
+
+
+</section>

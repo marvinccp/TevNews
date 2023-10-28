@@ -1,0 +1,32 @@
+article{
+  padding: 10px;
+ font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background: rgba(235, 235, 235, 0.646);
+
+
+& p{
+
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-family: Arial,
+  Helvetica,
+  sans-serif;
+  line-height: 1.3rem;
+
+
+  & small{
+    font-weight: bold;
+    font-size: 1rem;
+
+
+  }
+
+}
+
+
+
+
+
+}
