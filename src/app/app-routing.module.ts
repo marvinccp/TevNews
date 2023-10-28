@@ -5,7 +5,7 @@ import { PoliticaComponent } from './pages/politica/politica.component';
 import { TecnologiaComponent } from './pages/tecnologia/tecnologia.component';
 
 const routes: Routes = [
-  { path: 'deportes', component: DeportesComponent },
+  { path: '', component: DeportesComponent },
   { path: 'politica', component: PoliticaComponent },
   { path: 'tecnologia', component: TecnologiaComponent},
 ];
