@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OtherNews, recenPost } from 'src/app/interfaces/interfaces';
+// import { OtherNews, recenPost } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-deportes',
@@ -7,7 +7,6 @@ import { OtherNews, recenPost } from 'src/app/interfaces/interfaces';
   styleUrls: ['./deportes.component.css']
 })
 export class DeportesComponent {
-  public recentPost = recenPost
-  public OtherNews = OtherNews
+
 
 }

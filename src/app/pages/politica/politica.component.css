@@ -1,0 +1,17 @@
+section {
+  width: 80%;
+  min-height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  color: rgb(38, 38, 38);
+  font-family: arial;
+
+  & video {
+    width: 60%;
+    height: 60%;
+
+  }
+}

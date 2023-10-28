@@ -1,0 +1,8 @@
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: rgb(255, 47, 75);
+  color: aliceblue;
+}

@@ -9,6 +9,11 @@ interface MenuInterface {
 }
 export const menuOptions: MenuInterface[] = [
   {
+    name: 'Home',
+    description: 'Página principal',
+    link: '',
+  },
+  {
     name: 'Deporte',
     description: 'sección de deportes actualizada',
     link: 'deportes',
@@ -22,11 +27,6 @@ export const menuOptions: MenuInterface[] = [
     name: 'Tecnología',
     description: 'sección de tecnología actualizada',
     link: 'tecnologia',
-  },
-  {
-    name: 'Home',
-    description: 'Página principal',
-    link: 'Home',
   },
 ];
 interface Post {
