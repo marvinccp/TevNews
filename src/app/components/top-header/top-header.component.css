@@ -7,17 +7,7 @@ section{
 
   & p{
     padding: 10px;
-  }
-
-  & button{
-
-    background: rgb(49, 49, 49);
-    color: aliceblue;
-    width: 80px;
-    height: 3vh;
-    border: none;
     font-size: .8rem;
-    cursor: pointer;
-    margin-left: auto;
   }
+
 }

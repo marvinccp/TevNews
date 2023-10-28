@@ -1,6 +1,6 @@
 import { Title } from '@angular/platform-browser';
 
-export type Menu = 'Deporte' | 'Política' | 'Tecnología';
+export type Menu = 'Deporte' | 'Política' | 'Tecnología'| 'Home'
 
 interface MenuInterface {
   name: Menu;
@@ -22,6 +22,11 @@ export const menuOptions: MenuInterface[] = [
     name: 'Tecnología',
     description: 'sección de tecnología actualizada',
     link: 'tecnologia',
+  },
+  {
+    name: 'Home',
+    description: 'Página principal',
+    link: 'Home',
   },
 ];
 interface Post {

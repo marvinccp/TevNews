@@ -15,6 +15,7 @@ import { CommentFormComponent } from './components/comments/comment-form/comment
 import { CommentsListComponent } from './components/comments/comments-list/comments-list.component';
 import { CommentsItemComponent } from './components/comments/comments-item/comments-item.component';
 import { CommentsComponent } from './components/comments/comments/comments.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CommentsComponent } from './components/comments/comments/comments.compo
     CommentsListComponent,
     CommentsItemComponent,
     CommentsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
