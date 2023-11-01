@@ -1,6 +1,8 @@
 section {
   padding: 20px;
-      background: rgba(255, 0, 0, 0.764);
+      background: rgb(251, 40, 68);
+      max-width: 1200px;
+      margin: 0 auto;
 gap: 20px;
   display: flex;
   height: auto;
@@ -16,10 +18,13 @@ gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 0, 0, 0.513);
+    background: rgb(255, 47, 75);
+    gap: 10px;
 
-    & p {
-      color: aliceblue;
+    & img {
+     height: 50%;
+         filter: invert(100%) sepia(7%) saturate(6%) hue-rotate(314deg) brightness(100%) contrast(84%);
+
     }
 
   }
@@ -31,7 +36,7 @@ gap: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgba(255, 0, 0, 0.513);
+    background: rgb(255, 47, 75);
 
     & p {
       color: aliceblue;
@@ -46,7 +51,7 @@ gap: 20px;
     text-align: justify;
     align-items: center;
     flex-direction: column;
-    background: rgba(255, 0, 0, 0.513);
+    background: rgb(255, 47, 75);
 
     & p {
       color: aliceblue;
@@ -59,10 +64,10 @@ gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 0, 0, 0.513);
+    background: rgb(255, 47, 75);
 
-    & p {
-      color: aliceblue;
+    & img {
+      height: 30%;
     }
   }
 
