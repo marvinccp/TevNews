@@ -8,3 +8,7 @@ p{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(47, 47, 47);
 }
+a{
+  text-decoration: none;
+  color: black;
+}

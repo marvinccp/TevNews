@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { OtherNews, recenPost } from 'src/app/interfaces/interfaces';
+import {  recentPost } from 'src/app/interfaces/interfaces';
+import { OtherNews, OtherNewsInterface, } from 'src/app/interfaces/otherNews';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,11 @@ import { OtherNews, recenPost } from 'src/app/interfaces/interfaces';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  public recentPost = recenPost;
+  public recentPost = recentPost;
   public OtherNews = OtherNews;
+
+  selectNews?: OtherNewsInterface;
+  onSelect(news: OtherNewsInterface): void {
+    this.selectNews = news;
+  }
 }

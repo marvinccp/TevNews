@@ -16,6 +16,8 @@ import { CommentsListComponent } from './components/comments/comments-list/comme
 import { CommentsItemComponent } from './components/comments/comments-item/comments-item.component';
 import { CommentsComponent } from './components/comments/comments/comments.component';
 import { HomeComponent } from './pages/home/home.component';
+import { OtherNewsDetailComponent } from './pages/other-news-detail/other-news-detail.component';
+import { RecentPostDetailComponent } from './pages/recent-post-detail/recent-post-detail.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { HomeComponent } from './pages/home/home.component';
     CommentsItemComponent,
     CommentsComponent,
     HomeComponent,
+    OtherNewsDetailComponent,
+    RecentPostDetailComponent,
   ],
   imports: [
     BrowserModule,

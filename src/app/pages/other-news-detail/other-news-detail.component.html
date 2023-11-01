@@ -1,0 +1,20 @@
+<section *ngIf="onews">
+  <article>
+    <section>
+      <h2>{{ onews.title }}</h2>
+      <div class="other-news-image-container">
+        <img src="{{ onews.image }}" alt="{{onews.subTitle}}" />
+        <h1>{{onews.subTitle}}</h1>
+      </div>
+    </section>
+
+    <p>{{ onews.post }}</p>
+  </article>
+  <aside>
+    <div class="avatar-container">
+      <img src={{onews.autor?.avatar}} alt="{{onews.autor?.name}}">
+    </div>
+    <h2>{{onews.autor?.name}}</h2>
+    <p>{{onews.autor?.bio}}</p>
+  </aside>
+</section>

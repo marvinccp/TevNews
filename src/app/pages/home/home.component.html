@@ -23,16 +23,21 @@
       </div>
     </article>
 
-    <!-- recent pos -->
+    <!-- recent post -->
     <section class="recent-post-sports-container">
       <article class="article-recent-post" *ngFor="let post of recentPost">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.resume }}</p>
+        <a
+       [routerLink]= "['/recentPostDetail', post.id]"
+        >
+
+          <h2>{{ post.title }}</h2>
+
+          <p>{{ post.resume }}</p>
+        </a>
         <div class="separator-recent-post-sport"></div>
       </article>
     </section>
   </header>
-
   <main>
     <div class="item1"></div>
 
@@ -49,16 +54,21 @@
   <!-- other news -->
   <section class="other-news--p-container" >
     <h2 class="other-news-title">Other news</h2>
-    <div class="other-news-container" >
+     <div class="other-news-container" >
+        <article class="article-other-news " *ngFor="let onews of OtherNews"  >
+          <a
+          [routerLink]="['/onewsDetail', onews.id]"
+          >
+          <small class="small">{{onews.section}}</small>
+             <p>{{onews.title}}</p>
+            </a>
+        </article>
 
-    <article class="article-other-news " *ngFor="let onews of OtherNews" >
-      <small class="small">{{onews.section}}</small>
-      <p>{{onews.content}}</p>
-    </article>
 
-    </div>
-
+     </div>
   </section>
+
+
 
   <!-- videos -->
   <section class="videos-section-container">

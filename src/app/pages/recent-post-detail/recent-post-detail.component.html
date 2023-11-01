@@ -1,0 +1,20 @@
+<section *ngIf="rPost">
+  <article>
+    <section>
+      <h2>{{ rPost.title }}</h2>
+      <div class="other-news-image-container">
+        <img src="{{ rPost.image }}" alt="{{rPost.subTitle}}" />
+        <h1>{{rPost.subTitle}}</h1>
+      </div>
+    </section>
+
+    <p>{{ rPost.content }}</p>
+  </article>
+  <aside>
+    <div class="avatar-container">
+      <img src={{rPost.autor?.avatar}} alt="{{rPost.autor?.name}}">
+    </div>
+    <h2>{{rPost.autor?.name}}</h2>
+    <p>{{rPost.autor?.bio}}</p>
+  </aside>
+</section>
