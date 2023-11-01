@@ -1,0 +1,196 @@
+section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row: auto;
+  margin: 25px auto;
+  width: 90%;
+  row-gap: 20px;
+  max-width: 1200px;
+
+  & article {
+
+    width: 100%;
+    height: max-content;
+    min-height: 700px;
+
+    /* background: rgba(128, 0, 128, 0.369); */
+
+    & section {
+      width: 100%;
+
+      & h2 {
+        text-align: center;
+      }
+
+
+      .other-news-image-container {
+        /* background: greenyellow; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        & img {
+          width: 100%;
+          margin: 12px 0px;
+        }
+
+        & h1 {
+          font-size: 1.3rem;
+        }
+      }
+
+    }
+
+
+
+    & p {
+      white-space: pre-wrap;
+    }
+  }
+
+  & aside {
+
+    width: 100%;
+    height: max-content;
+    min-height: 700px;
+    background: rgba(211, 211, 211, 0.369);
+
+    .avatar-container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+
+        width: 70%;
+
+
+      }
+    }
+
+    & h2 {
+      margin: 15px 0;
+    }
+
+    & p {
+      white-space: pre-wrap;
+    }
+  }
+
+  & aside {
+    margin: 25px auto;
+    padding: 20px;
+
+    .avatar-container {
+      width: 100%;
+      background: rgba(172, 255, 47, 0.439);
+
+      & img {
+        width: 50%;
+
+      }
+    }
+
+    & h2 {
+      color: rgb(120, 120, 120);
+    }
+
+    & p {
+
+      color: rgb(158, 158, 158);
+    }
+  }
+
+
+
+
+}
+
+@media(width >=768px) {
+
+  section {
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-row: auto;
+    margin: 25px auto;
+    column-gap: 15px;
+    width: 90%;
+
+    & article {
+
+      width: 100%;
+      height: max-content;
+      min-height: 700px;
+      /* background: rgba(128, 0, 128, 0.369); */
+
+      & section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .other-news-image-container {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 60% 40%;
+          place-content: center;
+
+
+          & img {
+            width: 100%;
+          }
+
+          & h1 {
+            text-align: center;
+            align-self: center;
+            font-size: 2rem;
+            padding: 0 4px;
+          }
+        }
+
+      }
+
+
+
+      & p {
+        white-space: pre-wrap;
+      }
+    }
+
+
+
+
+    & aside {
+      margin: 25px auto;
+      padding: 20px;
+
+      .avatar-container {
+        width: 100%;
+        /* background: rgba(172, 255, 47, 0.439); */
+
+        & img {
+          width: 80%;
+
+        }
+      }
+
+      & h2 {
+        color: rgb(120, 120, 120);
+      }
+
+      & p {
+
+        color: rgb(158, 158, 158);
+      }
+    }
+
+
+
+
+  }
+
+
+
+
+}

@@ -1,26 +1,27 @@
 <section>
   <header>
     <!-- principal article -->
-    <article>
+    <article *ngFor="let pPost of principalPost">
+      <a [routerLink]="['/principalPostDetail', pPost.id]">
       <img
-        src="../../../assets/deportes/banneramericano.jpg"
-        alt="banner-americano"
+        src="{{pPost.image}}"
+        alt="{{pPost.title}}"
       />
       <div>
-        <h2>THE BIG GAME</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deserunt
-          repellat sit! Ab ipsum, beatae nobis porro quod, amet saepe
-          consectetur deleniti facere modi, dicta a! Minima possimus ea libero!.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus quasi cumque esse aspernatur nam sed quibusdam in
-          adipisci, ad dolorem eius explicabo hic velit illum quae, quo dolorum
-          soluta laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Sapiente, neque. Ea perspiciatis harum doloribus? Dolorum nulla
-          pariatur quae tempore, recusandae, reiciendis aliquid nostrum
-          dignissimos cumque facere eligendi, harum commodi iste!
-        </p>
-      </div>
+          <h2>
+            <div class="section">
+<div class="square"></div>
+            <small>{{pPost.section}}</small>
+            </div>
+
+            {{pPost.title}}
+          </h2>
+
+          <p>
+            {{pPost.resume}}
+          </p>
+        </div>
+      </a>
     </article>
 
     <!-- recent post -->
@@ -63,8 +64,6 @@
              <p>{{onews.title}}</p>
             </a>
         </article>
-
-
      </div>
   </section>
 

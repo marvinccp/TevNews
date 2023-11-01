@@ -18,6 +18,7 @@ import { CommentsComponent } from './components/comments/comments/comments.compo
 import { HomeComponent } from './pages/home/home.component';
 import { OtherNewsDetailComponent } from './pages/other-news-detail/other-news-detail.component';
 import { RecentPostDetailComponent } from './pages/recent-post-detail/recent-post-detail.component';
+import { PrincipalPostDetailComponent } from './pages/principal-post-detail/principal-post-detail.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { RecentPostDetailComponent } from './pages/recent-post-detail/recent-pos
     HomeComponent,
     OtherNewsDetailComponent,
     RecentPostDetailComponent,
+    PrincipalPostDetailComponent,
   ],
   imports: [
     BrowserModule,

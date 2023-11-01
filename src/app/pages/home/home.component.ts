@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {  recentPost } from 'src/app/interfaces/interfaces';
 import { OtherNews, OtherNewsInterface, } from 'src/app/interfaces/otherNews';
+import { principalPost } from 'src/app/interfaces/principalPost';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +11,7 @@ import { OtherNews, OtherNewsInterface, } from 'src/app/interfaces/otherNews';
 export class HomeComponent {
   public recentPost = recentPost;
   public OtherNews = OtherNews;
+  public principalPost = principalPost
 
-  selectNews?: OtherNewsInterface;
-  onSelect(news: OtherNewsInterface): void {
-    this.selectNews = news;
-  }
+
 }

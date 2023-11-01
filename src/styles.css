@@ -1,14 +1,16 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-p{
+
+p {
   font-size: 1.1rem;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(47, 47, 47);
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }

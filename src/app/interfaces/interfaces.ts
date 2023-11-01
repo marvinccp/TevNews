@@ -36,6 +36,7 @@ export interface Post {
   content: string;
   resume: string;
   image?: string;
+  section?:string
   autor?: {
     name: string;
     avatar: string;
@@ -45,6 +46,7 @@ export interface Post {
 export const recentPost: Post[] = [
   {
     id: 1,
+    section: 'psicología',
     title: `Trazando el Camino de la Vida: Reflexiones en un Viaje de Autodescubrimiento y Crecimiento"`,
     subTitle: '"Autodescubrimiento y Crecimiento"',
     image: '../../assets/recent-post/descubrimiento.jpg',
@@ -54,7 +56,7 @@ export const recentPost: Post[] = [
       'La vida, en su infinita diversidad, nos presenta un escenario en constante evolución, donde los seres humanos, en su búsqueda incansable de significado y propósito, se embarcan en un viaje de autodescubrimiento y crecimiento.',
 
     autor: {
-      name: 'Brittany Do',
+      name: 'María Rodríguez',
       avatar: 'https://joesch.moe/api/v1/female/random',
       bio: 'María Rodríguez, periodista de 36 años, vio la primera luz del día en la bulliciosa ciudad de Madrid. Desde temprana edad, demostró su amor por la escritura y el anhelo de descubrir la verdad detrás de cada historia. Esta pasión la llevó a graduarse en periodismo en la Universidad Complutense de Madrid, donde comenzó a forjar su camino en el mundo de las noticias.\n\n A lo largo de su carrera, María ha sido testigo y narradora de eventos globales, desde conflictos en el Medio Oriente hasta informes sobre crisis humanitarias en África. Siempre comprometida con el periodismo de investigación, ha destapado escándalos y expuesto la corrupción. Con más de 15 años de experiencia, María se ha convertido en un faro de integridad en el ámbito periodístico.\n\n',
     },
@@ -69,7 +71,7 @@ export const recentPost: Post[] = [
     resume:
       'En el mundo en constante evolución de la inteligencia artificial, ChatGPT ha emergido como una de las innovaciones más prometedoras. Desarrollado por OpenAI, ChatGPT es un modelo de lenguaje generativo que utiliza el aprendizaje profundo para comprender y generar texto de manera sorprendentemente natural.',
     autor: {
-      name: 'Brittany Do',
+      name: 'María Rodríguez',
       avatar: 'https://joesch.moe/api/v1/female/random',
       bio: 'María Rodríguez, periodista de 36 años, vio la primera luz del día en la bulliciosa ciudad de Madrid. Desde temprana edad, demostró su amor por la escritura y el anhelo de descubrir la verdad detrás de cada historia. Esta pasión la llevó a graduarse en periodismo en la Universidad Complutense de Madrid, donde comenzó a forjar su camino en el mundo de las noticias.\n\n A lo largo de su carrera, María ha sido testigo y narradora de eventos globales, desde conflictos en el Medio Oriente hasta informes sobre crisis humanitarias en África. Siempre comprometida con el periodismo de investigación, ha destapado escándalos y expuesto la corrupción. Con más de 15 años de experiencia, María se ha convertido en un faro de integridad en el ámbito periodístico.\n\n',
     },
@@ -84,7 +86,7 @@ export const recentPost: Post[] = [
     resume:
       'La política internacional se encuentra en constante evolución, y hoy más que nunca, enfrenta desafíos complejos que afectan a nivel global. Desde conflictos regionales hasta cuestiones medioambientales',
     autor: {
-      name: 'Brittany Do',
+      name: 'María Rodríguez',
       avatar: 'https://joesch.moe/api/v1/female/random',
       bio: 'María Rodríguez, periodista de 36 años, vio la primera luz del día en la bulliciosa ciudad de Madrid. Desde temprana edad, demostró su amor por la escritura y el anhelo de descubrir la verdad detrás de cada historia. Esta pasión la llevó a graduarse en periodismo en la Universidad Complutense de Madrid, donde comenzó a forjar su camino en el mundo de las noticias.\n\n A lo largo de su carrera, María ha sido testigo y narradora de eventos globales, desde conflictos en el Medio Oriente hasta informes sobre crisis humanitarias en África. Siempre comprometida con el periodismo de investigación, ha destapado escándalos y expuesto la corrupción. Con más de 15 años de experiencia, María se ha convertido en un faro de integridad en el ámbito periodístico.\n\n',
     },
